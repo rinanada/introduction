@@ -1,37 +1,44 @@
 html {
-  height: 100%; }
+    height: 100%;
+}
 
 body {
-  height: 100%;
-  margin: 0; }
+    height: 100%;
+    margin: 0;
+}
 
-.drawar {
+.drawar{
   width: 100%;
   height: 100%;
-  background: #dcdcdc; }
+  background: #dcdcdc;
+}
 
-.wrapper {
+.wrapper{
   max-width: 950px;
   height: 100vh;
   margin: 0 auto;
-  background: #ffffff; }
+  background: #ffffff;
 
-.header {
+}
+
+.header{
   width: 100%;
   height: 75px;
-  border-bottom: solid 1px #dcdcdc; }
-  .header__logo {
+  border-bottom : solid 1px #dcdcdc;
+  &__logo{
     margin: 0;
     padding-left: 30px;
     line-height: 75px;
-    vertical-align: middle; }
+    vertical-align: middle;
+  }
+}
 
-.nav {
+.nav{
   width: 200px;
   height: 500px;
   float: right;
-  position: relative; }
-  .nav_container {
+  position: relative;
+  &_container{
     margin: 0;
     padding: 0;
     width: 170px;
@@ -43,35 +50,43 @@ body {
     left: 0;
     margin: auto;
     font-family: "arial";
-    font-size: 13px; }
-    .nav_container__page {
+    font-size: 13px;
+    &__page{
       width: 170px;
       height: 40px;
       border-bottom: solid 1px #dcdcdc;
       line-height: 40px;
-      vertical-align: middle; }
-    .nav_container__link {
+      vertical-align: middle;
+    }
+    &__link{
       text-decoration: none;
-      color: #000000; }
+      color: #000000;
+    }
+  }
+}
 
-.nav_page_cooks_link {
-  list-style: none; }
+.nav_page_cooks_link{
+  list-style: none;
+}
 
-.cooks_list {
-  height: 160px; }
+.cooks_list{
+  height: 160px;
+}
 
-.food-list {
+.food-list{
   width: 750px;
   height: 500px;
-  border-right: solid 1px #dcdcdc; }
-  .food-list__content {
+  border-right : solid 1px #dcdcdc;
+  &__content{
     float: left;
-    margin: 12px; }
+    margin: 12px;
+  }
+}
 
-.footer {
+
+.footer{
   width: 100%;
   height: 400px;
   clear: both;
-  background: #000000; }
-
-/*# sourceMappingURL=foods.css.map */
+  background: #000000;
+}
