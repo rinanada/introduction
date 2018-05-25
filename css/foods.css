@@ -27,14 +27,14 @@ body {
   border-bottom : solid 1px #dcdcdc;
 }
 
-.header-logo{
+.header__logo{
   margin: 0;
   padding-left: 30px;
   line-height: 75px;
   vertical-align: middle;
 }
 
-.navbar{
+.nav{
   width: 200px;
   height: 500px;
   float: right;
@@ -56,7 +56,7 @@ body {
   font-size: 13px;
 }
 
-.nav_page{
+.nav_container__page{
   width: 170px;
   height: 40px;
   border-bottom: solid 1px #dcdcdc;
@@ -64,7 +64,7 @@ body {
   vertical-align: middle;
 }
 
-a.nav_page_link{
+.nav_container__link{
   text-decoration: none;
   color: #000000;
 }
@@ -83,7 +83,7 @@ a.nav_page_link{
   border-right : solid 1px #dcdcdc;
 }
 
-.food-list-content{
+.food-list__content{
   float: left;
   margin: 12px;
 }
