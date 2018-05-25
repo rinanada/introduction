@@ -1,0 +1,96 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.drawar{
+  width: 100%;
+  height: 100%;
+  background: #dcdcdc;
+}
+
+.wrapper{
+  max-width: 950px;
+  height: 100vh;
+  margin: 0 auto;
+  background: #ffffff;
+
+}
+
+.header{
+  width: 100%;
+  height: 75px;
+  border-bottom : solid 1px #dcdcdc;
+}
+
+.header-logo{
+  margin: 0;
+  padding-left: 30px;
+  line-height: 75px;
+  vertical-align: middle;
+}
+
+.navbar{
+  width: 200px;
+  height: 500px;
+  float: right;
+  position: relative;
+}
+
+.nav_container{
+  margin: 0;
+  padding: 0;
+  width: 170px;
+  height: 500px;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  font-family: "arial";
+  font-size: 13px;
+}
+
+.nav_page{
+  width: 170px;
+  height: 40px;
+  border-bottom: solid 1px #dcdcdc;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+a.nav_page_link{
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav_page_cooks_link{
+  list-style: none;
+}
+
+.cooks_list{
+  height: 160px;
+}
+
+.food-list{
+  width: 750px;
+  height: 500px;
+  border-right : solid 1px #dcdcdc;
+}
+
+.food-list-content{
+  float: left;
+  margin: 12px;
+}
+
+.footer{
+  width: 100%;
+  height: 400px;
+  clear: both;
+  background: #000000;
+}
