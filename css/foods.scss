@@ -29,7 +29,47 @@ body {
     height: 65px;
     padding:4px 0 0 30px;
   }
+}
 
+.nav{
+  width: 200px;
+  height: 500px;
+  float: right;
+  position: relative;
+  background: #ffffff;
+  border-left: solid 1px #dcdcdc;
+  &_container{
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-family: "arial";
+    font-size: 13px;
+    &__page{
+      width: 170px;
+      height: 40px;
+      border-bottom: solid 1px #dcdcdc;
+      line-height: 40px;
+      vertical-align: middle;
+    }
+    &__link{
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+}
+
+.cooks_list{
+  height: 160px;
+}
+
+.nav_page_cooks_link{
+  list-style: none;
 }
 
 @media screen and (min-width: 940px) {
@@ -38,46 +78,9 @@ body {
     float: right;
     padding: 15px 30px 0 0;
   }
-  
-  .nav{
-    width: 200px;
-    height: 500px;
-    float: right;
-    position: relative;
-    background: #ffffff;
-    border-left: solid 1px #dcdcdc;
-    &_container{
-      margin: 0;
-      padding: 0;
-      width: 170px;
-      list-style: none;
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      margin: auto;
-      font-family: "arial";
-      font-size: 13px;
-      &__page{
-        width: 170px;
-        height: 40px;
-        border-bottom: solid 1px #dcdcdc;
-        line-height: 40px;
-        vertical-align: middle;
-      }
-      &__link{
-        text-decoration: none;
-        color: #000000;
-      }
-    }
-  }
 
-  .nav_page_cooks_link{
-    list-style: none;
-  }
-
-  .cooks_list{
-    height: 160px;
+  .slide-nav{
+    display: none;
   }
 
   .food-list{
@@ -113,11 +116,13 @@ body {
     float: right;
     padding: 15px 30px 0 0;
   }
-  .nav{
-    display:none;
+
+  .pc-nav{
+    display: none;
   }
 
   .food-list{
+    z-index: 10;
     &__content{
       float: left;
       margin: 12px;
