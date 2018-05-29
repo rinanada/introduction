@@ -150,5 +150,8 @@ body {
   height: 400px;
   clear: both;
   background: #000000; }
+  .footer a img {
+    height: 100px;
+    margin: 70px 0 0 600px; }
 
 /*# sourceMappingURL=foods.css.map */
