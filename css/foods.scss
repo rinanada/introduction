@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN','Arial','メイリオ', Meiryo,sans-serif;
     height: 100%;
     margin: 0;
 }
@@ -30,6 +31,18 @@ body {
   }
 }
 
+.introduction-text{
+  position: absolute;
+  top: 95px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN','Arial','メイリオ', Meiryo,sans-serif;
+  font-size: 16px;
+}
+
+.contact-form{
+  position: absolute;
+}
 // pc size
 @media screen and (min-width: 940px) {
   .glyphicon-align-right{
@@ -51,7 +64,7 @@ body {
       padding: 0;
       width: 170px;
       list-style: none;
-      font-family: "arial";
+      // font-family: "arial";
       font-size: 13px;
       &__page{
         width: 170px;
@@ -99,6 +112,9 @@ body {
       }
     }
   }
+
+
+
 }
 
 // smartphone size

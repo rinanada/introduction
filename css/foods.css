@@ -1,7 +1,9 @@
+@charset "UTF-8";
 html {
   height: 100%; }
 
 body {
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN','Arial','メイリオ', Meiryo,sans-serif;
   height: 100%;
   margin: 0; }
 
@@ -23,6 +25,17 @@ body {
     height: 65px;
     padding: 4px 0 0 30px; }
 
+.introduction-text {
+  position: absolute;
+  top: 95px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN','Arial','メイリオ', Meiryo,sans-serif;
+  font-size: 16px; }
+
+.contact-form {
+  position: absolute; }
+
 @media screen and (min-width: 940px) {
   .glyphicon-align-right {
     visibility: hidden; }
@@ -41,7 +54,6 @@ body {
       padding: 0;
       width: 170px;
       list-style: none;
-      font-family: "arial";
       font-size: 13px; }
       .nav_container__page {
         width: 170px;
