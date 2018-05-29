@@ -5,4 +5,5 @@ $(function(){
 })
 $('.glyphicon-align-right').click(function(){
   $('.nav').toggle();
+  $(this).toggleClass('open')
 });
