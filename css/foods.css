@@ -27,6 +27,9 @@ body {
   .glyphicon-align-right {
     visibility: hidden; }
 
+  .glyphicon-remove {
+    visibility: hidden; }
+
   .nav {
     width: 200px;
     height: 500px;
@@ -81,15 +84,22 @@ body {
     float: right;
     padding: 15px 30px 0 0; }
 
+  .glyphicon-remove {
+    padding: 30px 0 0 15px; }
+    .glyphicon-remove p {
+      float: right; }
+
   .nav {
     z-index: 100;
     position: fixed;
-    top: 0;
+    float: right;
+    top: 75px;
     right: 0;
     width: 200px;
     height: 500px;
     background: #ffffff;
-    border-left: solid 1px #dcdcdc; }
+    border-left: solid 1px #dcdcdc;
+    border-bottom: solid 1px #dcdcdc; }
     .nav_container {
       margin: auto;
       padding: 0;
