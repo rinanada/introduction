@@ -1,0 +1,212 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN','Arial','メイリオ', Meiryo,sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.drawar{
+  width: 100%;
+  height: 100%;
+  background: #dcdcdc;
+}
+
+.wrapper{
+  max-width: 950px;
+  margin: 0 auto;
+  background: #ffffff;
+
+}
+
+.header{
+  width: 100%;
+  height: 75px;
+  border-bottom : solid 1px #dcdcdc;
+  a img{
+    height: 65px;
+    padding:4px 0 0 30px;
+  }
+}
+
+.introduction-text{
+  position: absolute;
+  top: 95px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN','Arial','メイリオ', Meiryo,sans-serif;
+  font-size: 16px;
+}
+
+.contact-form{
+  position: absolute;
+}
+// pc size
+@media screen and (min-width: 940px) {
+  .glyphicon-align-right{
+    visibility:hidden;
+  }
+
+  .glyphicon-remove{
+    visibility:hidden;
+  }
+
+  .nav{
+    width: 200px;
+    height: 500px;
+    float: right;
+    background: #ffffff;
+    border-left: solid 1px #dcdcdc;
+    &_container{
+      margin: auto;
+      padding: 0;
+      width: 170px;
+      list-style: none;
+      // font-family: "arial";
+      font-size: 13px;
+      &__page{
+        width: 170px;
+        height: 40px;
+        border-bottom: solid 1px #dcdcdc;
+        line-height: 40px;
+        vertical-align: middle;
+      }
+      &__link{
+        text-decoration: none;
+        color: #000000;
+      }
+    }
+  }
+
+  .cooks_list{
+    height: 160px;
+  }
+
+  .nav_page_cooks_link{
+    list-style: none;
+  }
+
+  .food-list{
+    width: 750px;
+    &__content{
+      float: left;
+      margin: 12px;
+      position: relative;
+      a:hover img{
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+        -ms-filter: "alpha(opacity=70)";
+      }
+      &_title{
+        position: absolute;
+        bottom: 0;
+        p{
+          font-size: 25px;
+          color: #ffffff;
+          text-shadow: 1px 1px 5px #000000;
+          margin-left: 15px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+
+
+
+}
+
+// smartphone size
+@media screen and (max-width: 940px) {
+  .glyphicon-align-right{
+    visibility:visible;
+    float: right;
+    padding: 15px 30px 0 0;
+  }
+
+  .glyphicon-remove{
+    padding: 30px 0 0 15px;
+    p{
+      float: right;
+    }
+  }
+
+  .nav{
+    z-index: 100;
+    position: fixed;
+    float: right;
+    top: 75px;
+    right: 0;
+    width: 200px;
+    height: 500px;
+    background: #ffffff;
+    border-left: solid 1px #dcdcdc;
+    border-bottom: solid 1px #dcdcdc;
+
+    &_container{
+      margin: auto;
+      padding: 0;
+      width: 170px;
+      list-style: none;
+      font-family: "arial";
+      font-size: 13px;
+      &__page{
+        width: 170px;
+        height: 40px;
+        border-bottom: solid 1px #dcdcdc;
+        line-height: 40px;
+        vertical-align: middle;
+      }
+      &__link{
+        text-decoration: none;
+        color: #000000;
+      }
+    }
+  }
+
+  .cooks_list{
+    height: 160px;
+  }
+
+  .nav_page_cooks_link{
+    list-style: none;
+  }
+
+  .food-list{
+    height: 100%;
+    &__content{
+      z-index: 10;
+      float: left;
+      margin: 12px;
+      position: relative;
+      a:hover img{
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+        -ms-filter: "alpha(opacity=70)";
+      }
+      &_title{
+        position: absolute;
+        bottom: 0;
+        p{
+          font-size: 25px;
+          color: #ffffff;
+          text-shadow: 1px 1px 5px #000000;
+          margin-left: 15px;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  width: 100%;
+  height: 400px;
+  clear: both;
+  background: #000000;
+  a img{
+    height: 100px;
+    margin:70px 0 0 600px;
+  }
+}
