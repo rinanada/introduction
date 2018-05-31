@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import './App.css';
+
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
       todo: [
-        { title: 'JavaScript覚える' } ,
-        { title: 'jQuery覚える' } ,
-        { title: 'ES2015覚える' } ,
-        { title: 'React覚える' }
+        { title: 'すいーとぽてと' } ,
+        { title: '秋だね' } ,
+        { title: 'こげてる' }
       ]
     };
     this.addTodo = this.addTodo.bind(this);
@@ -42,10 +43,12 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
-        <img src="2012-12-01 14.42.02.jpg" width="220" height="220" />
-        <h3>コメントする</h3>
-        <ul>
+      <div className="App">
+        <div className="App-image">
+          <img src="2012-12-01 14.42.02.jpg" width="220" height="220" />
+        </div>
+        <h3 className="App-title">コメントする</h3>
+        <ul className="App-list">
           {this.state.todo.map((todo, i)=>{
             return <li key={i}><input type="button" value="☓" onClick={() => this.deleteTodo(i)}/> {todo.title}</li>
           })}
