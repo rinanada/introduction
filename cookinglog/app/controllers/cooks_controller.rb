@@ -1,0 +1,3 @@
+class CooksController < ApplicationController
+
+end

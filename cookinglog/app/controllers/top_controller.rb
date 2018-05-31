@@ -4,4 +4,13 @@ class TopController < ApplicationController
 
   def introduction
   end
+
+  def sweets
+  end
+
+  def dinner
+  end
+
+  def chinese
+  end
 end

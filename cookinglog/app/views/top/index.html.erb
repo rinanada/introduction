@@ -15,12 +15,11 @@
         </li>
         <li class="nav_container__page">
           <%= link_to "INTRODUCTION", introduction_path, class: :"nav_container__link" %>
-          <!-- <a class="nav_container__link" href="">INTRODUCTION</a> -->
         </li>
         <li class="nav_container__page cooks_list">
           <a class="nav_container__link" href="">COOKS</a>
           <ul class="nav_page_cooks_link">
-            <li>SWEETS</li>
+            <li><%= link_to "SWEETS", sweets_path %></li>
             <li>DINNER</li>
             <li>CHINESE</li>
           </ul>
