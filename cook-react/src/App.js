@@ -6,25 +6,25 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      todo: [
+      comment: [
         { title: 'すいーとぽてと' } ,
         { title: '秋だね' } ,
         { title: 'こげてる' }
       ]
     };
-    this.addTodo = this.addTodo.bind(this);
+    this.addComment = this.addComment.bind(this);
   }
 
   //新規追加
-  addTodo(){
+  addComment(){
     //追加
-    this.state.todo.push({
+    this.state.comment.push({
       title: this.refs.newText.value
     });
 
     //保存
     this.setState({
-      todo : this.state.todo
+      todo : this.state.comment
     });
 
     //初期化
@@ -32,12 +32,12 @@ class App extends Component {
   }
 
   //削除機能
-  deleteTodo(i){
+  deleteComment(i){
     //削除
-    this.state.todo.splice(i ,1);
+    this.state.comment.splice(i ,1);
     //保存
     this.setState({
-      todo : this.state.todo
+      todo : this.state.comment
     });
 
   }
@@ -49,12 +49,12 @@ class App extends Component {
         </div>
         <h3 className="App-title">コメントする</h3>
         <ul className="App-list">
-          {this.state.todo.map((todo, i)=>{
-            return <li key={i}><input type="button" value="☓" onClick={() => this.deleteTodo(i)}/> {todo.title}</li>
+          {this.state.comment.map((comment, i)=>{
+            return <li key={i}><input type="button" value="☓" onClick={() => this.deleteComment(i)}/> {comment.title}</li>
           })}
         </ul>
         <input type="text"  ref="newText"/>
-        <input type="button" value="追加" onClick={this.addTodo} />
+        <input type="button" value="追加" onClick={this.addComment} />
       </div>
 
 
