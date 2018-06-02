@@ -13,4 +13,7 @@ class TopController < ApplicationController
 
   def chinese
   end
+
+  def contacts
+  end
 end
