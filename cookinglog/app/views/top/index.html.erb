@@ -3,9 +3,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <div class="wrapper">
     <header class="header">
-      <a href="">
-        <img class="header__img" src="assets/IMG_6578.JPG" alt=""height="65" >
-      </a>
+      <%= link_to image_tag("IMG_6578.JPG"), root_path,class: :"header__img" %>
     <span class="glyphicon glyphicon-align-right" aria-hidden="true"style="font-size: 40px"></span>
     </header>
     <nav class="nav">
@@ -37,27 +35,18 @@
         <div class="food-list__content_title">
           <p>ミルフィーユ</p>
         </div>
-        <!-- <a class="food-list-img" href="">
-          <img src="assets/2013-08-09 13.01.00.jpg" width="220" height="220" >
-        </a> -->
         <%= link_to image_tag("2013-08-09 13.01.00.jpg"), comments_path,class: :"food-list-img"%>
       </article>
       <article class="food-list__content">
         <div class="food-list__content_title">
           <p>飛騨牛</p>
         </div>
-        <!-- <a class="food-list-img" href="">
-          <img src="assets/IMG_3703.JPG" width="220" height="220" >
-        </a> -->
         <%= link_to image_tag("IMG_3703.JPG"), comments_path,class: :"food-list-img"%>
       </article>
       <article class="food-list__content">
         <div class="food-list__content_title">
           <p>（無題）</p>
         </div>
-        <!-- <a class="food-list-img" href="">
-          <img src="assets/2013-07-03 21.50.00-2.jpg" width="220" height="220" >
-        </a> -->
         <%= link_to image_tag("2013-07-03 21.50.00-2.jpg"), comments_path,class: :"food-list-img"%>
       </article>
       <article class="food-list__content">
@@ -70,9 +59,6 @@
         <div class="food-list__content_title">
           <p>オムライス</p>
         </div>
-        <!-- <a class="food-list-img" href="">
-          <img src="assets/IMG_4993.JPG" width="220" height="220" >
-        </a> -->
         <%= link_to image_tag("IMG_4993.JPG"), comments_path,class: :"food-list-img"%>
 
       </article>
@@ -80,15 +66,12 @@
         <div class="food-list__content_title">
           <p>友喜屋</p>
         </div>
-        <!-- <a class="food-list-img" href="">
-          <img src="assets/IMG_20180106_194600.jpg" width="220" height="220" >
-        </a> -->
         <%= link_to image_tag("IMG_20180106_194600.jpg"), comments_path,class: :"food-list-img"%>
       </article>
     </section>
     <footer class="footer">
       <a href="">
-        <img class="" src="assets/logo_w.png" alt=""height="100" >
+        <img class="" src="<%= asset_path "logo_w.png" %>" alt=height="100" >
       </a>
     </footer>
   </div>

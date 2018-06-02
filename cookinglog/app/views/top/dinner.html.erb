@@ -38,56 +38,43 @@
         <div class="food-list__content_title">
           <p>オムライス</p>
         </div>
-        <a class="food-list-img" href="">
-          <img src="assets/IMG_4993.JPG" width="220" height="220" >
-        </a>
+        <%= link_to image_tag("IMG_4993.JPG"), comments_path,class: :"food-list-img"%>
       </article>
       <article class="food-list__content">
         <div class="food-list__content_title">
           <p>クラフトビール<br>”SVB”</p>
         </div>
-        <a class="food-list-img" href="">
-          <img src="assets/IMG_6019.JPG" width="220" height="220" >
-        </a>
+        <%= link_to image_tag("IMG_6019.JPG"), comments_path,class: :"food-list-img"%>
       </article>
       <article class="food-list__content">
         <div class="food-list__content_title">
           <p>飛騨牛</p>
         </div>
-        <a class="food-list-img" href="">
-          <img src="assets/IMG_3703.JPG" width="220" height="220" >
-        </a>
+        <%= link_to image_tag("IMG_3703.JPG"), comments_path,class: :"food-list-img"%>
       </article>
       <article class="food-list__content">
         <div class="food-list__content_title">
           <p>ぶたの生姜焼き</p>
         </div>
-        <a class="food-list-img" href="">
-          <img src="assets/2017-01-20 18.41.13.jpg" width="220" height="220" >
-        </a>
+        <%= link_to image_tag("2017-01-20 18.41.13.jpg"), comments_path,class: :"food-list-img"%>
       </article>
-
       <article class="food-list__content">
         <div class="food-list__content_title">
           <p>ベニズワイガニ</p>
         </div>
-        <a class="food-list-img" href="">
-          <img src="assets/IMG_4472.JPG" width="220" height="220" >
-        </a>
+        <%= link_to image_tag("IMG_4472.JPG"), comments_path,class: :"food-list-img"%>
       </article>
       <article class="food-list__content">
         <div class="food-list__content_title">
           <p>とり野菜味噌</p>
         </div>
-        <a class="food-list-img" href="">
-          <img src="assets/IMG_4995.JPG" width="220" height="220" >
-        </a>
+        <%= link_to image_tag("IMG_4995.JPG"), comments_path,class: :"food-list-img"%>
       </article>
 
     </section>
     <footer class="footer">
       <a href="">
-        <img class="" src="assets/logo_w.png" alt=""height="100" >
+        <img class="" src="<%= asset_path "logo_w.png" %>" alt=height="100" >
       </a>
     </footer>
   </div>

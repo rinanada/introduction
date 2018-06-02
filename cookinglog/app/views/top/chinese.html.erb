@@ -41,53 +41,42 @@
         <a class="food-list-img" href="">
           <img src="assets/IMG_20180106_194600.jpg" width="220" height="220" >
         </a>
+
       </article>
       <article class="food-list__content">
         <div class="food-list__content_title">
           <p>ラーメンヒロ</p>
         </div>
-        <a class="food-list-img" href="">
-          <img src="assets/IMG_3673.JPG" width="220" height="220" >
-        </a>
+        <%= link_to image_tag("IMG_3673.JPG"), comments_path,class: :"food-list-img"%>
       </article>
       <article class="food-list__content">
         <div class="food-list__content_title">
           <p>友喜屋<br>まぜそば</p>
         </div>
-        <a class="food-list-img" href="">
-          <img src="assets/IMG_6016.JPG" width="220" height="220" >
-        </a>
+        <%= link_to image_tag("IMG_6016.JPG"), comments_path,class: :"food-list-img"%>
       </article>
       <article class="food-list__content">
         <div class="food-list__content_title">
           <p>ラーメンどんき<br>担々麺</p>
         </div>
-        <a class="food-list-img" href="">
-          <img src="assets/IMG_6489.JPG" width="220" height="220" >
-        </a>
+        <%= link_to image_tag("IMG_6489.JPG"), comments_path,class: :"food-list-img"%>
       </article>
-
       <article class="food-list__content">
         <div class="food-list__content_title">
           <p></p>
         </div>
-        <a class="food-list-img" href="">
-          <img src="assets/IMG_6351.JPG" width="220" height="220" >
-        </a>
+        <%= link_to image_tag("IMG_6351.JPG"), comments_path,class: :"food-list-img"%>
       </article>
       <article class="food-list__content">
         <div class="food-list__content_title">
           <p>魂心家</p>
         </div>
-        <a class="food-list-img" href="">
-          <img src="assets/IMG_5932.JPG" width="220" height="220" >
-        </a>
+        <%= link_to image_tag("IMG_5932.JPG"), comments_path,class: :"food-list-img"%>
       </article>
-
     </section>
     <footer class="footer">
       <a href="">
-        <img class="" src="assets/logo_w.png" alt=""height="100" >
+        <img class="" src="<%= asset_path "logo_w.png" %>" alt=height="100" >
       </a>
     </footer>
   </div>
