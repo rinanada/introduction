@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   match "dinner", :to=> 'top#dinner', via: [:get]
   match "chinese", :to=> 'top#chinese', via: [:get]
   match "contacts", :to=> 'top#contacts', via: [:get]
+  match "comments", :to=> 'top#comments', via: [:get]
 end

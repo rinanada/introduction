@@ -16,4 +16,7 @@ class TopController < ApplicationController
 
   def contacts
   end
+
+  def comments
+  end
 end
