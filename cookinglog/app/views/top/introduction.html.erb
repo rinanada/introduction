@@ -3,32 +3,35 @@
   <div class="wrapper">
     <header class="header">
       <%= link_to image_tag("IMG_6578.JPG"), root_path,class: :"header__img" %>
-      <!-- <a href="">
-        <img class="header__img" src="assets/IMG_6578.JPG" alt=""height="65" >
-      </a> -->
     <span class="glyphicon glyphicon-align-right" aria-hidden="true"style="font-size: 40px"></span>
     </header>
     <nav class="nav">
       <ul class="nav_container">
         <li class="nav_container__page">
           <%= link_to "HOME", root_path, class: :"nav_container__link" %>
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"style="font-size: 10px"></span>
         </li>
         <li class="nav_container__page">
           <%= link_to "INTRODUCTION", introduction_path, class: :"nav_container__link" %>
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"style="font-size: 10px"></span>
         </li>
         <li class="nav_container__page cooks_list">
           <a class="nav_container__link" href="">COOKS</a>
           <ul class="nav_page_cooks_link">
-            <li><%= link_to "SWEETS", sweets_path %></li>
-            <li>DINNER</li>
-            <li>CHINESE</li>
+            <li><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"style="font-size: 10px"></span><%= link_to "SWEETS", sweets_path %></li>
+            <li><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"style="font-size: 10px"></span><%= link_to "DINNER", dinner_path %></li>
+            <li><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"style="font-size: 10px"></span><%= link_to "CHINESE", chinese_path %></li>
           </ul>
         </li>
         <li class="nav_container__page">
-          <a class="nav_container__link" href="">CONTACT</a>
+          <%= link_to "CONTACTS", contacts_path, class: :"nav_container__link" %>
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"style="font-size: 10px"></span>
         </li>
       </ul>
     </nav>
+    <div class="page-title">
+      <h3 class="page-title_text">INTRODUCTION</h3>
+    </div>
     <section class="food-list" style="visibility:hidden">
       <article class="food-list__content">
         <a class="food-list-img" href="">

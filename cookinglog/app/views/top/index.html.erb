@@ -12,21 +12,23 @@
       <ul class="nav_container">
         <li class="nav_container__page">
           <a class="nav_container__link" href="" >HOME</a>
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"style="font-size: 10px"></span>
         </li>
         <li class="nav_container__page">
           <%= link_to "INTRODUCTION", introduction_path, class: :"nav_container__link" %>
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"style="font-size: 10px"></span>
         </li>
         <li class="nav_container__page cooks_list">
           <a class="nav_container__link" href="">COOKS</a>
           <ul class="nav_page_cooks_link">
-            <li><%= link_to "SWEETS", sweets_path %></li>
-            <li>DINNER</li>
-            <li>CHINESE</li>
+            <li><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"style="font-size: 10px"></span><%= link_to "SWEETS", sweets_path %></li>
+            <li><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"style="font-size: 10px"></span><%= link_to "DINNER", dinner_path %></li>
+            <li><span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"style="font-size: 10px"></span><%= link_to "CHINESE", chinese_path %></li>
           </ul>
         </li>
         <li class="nav_container__page">
-          <%= link_to "CONTACT", contacts_path, class: :"nav_container__link" %>
-
+          <%= link_to "CONTACTS", contacts_path, class: :"nav_container__link" %>
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"style="font-size: 10px"></span>
         </li>
       </ul>
     </nav>
