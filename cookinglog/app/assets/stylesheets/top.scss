@@ -183,22 +183,19 @@ body {
 
   .nav{
     z-index: 100;
-    position: fixed;
+    position: absolute;
     float: right;
-    top: 75px;
     right: 0;
     width: 200px;
     height: 500px;
     background: #ffffff;
     border-left: solid 1px #dcdcdc;
     border-bottom: solid 1px #dcdcdc;
-
     &_container{
       margin: auto;
       padding: 0;
       width: 170px;
       list-style: none;
-      font-family: "arial";
       font-size: 13px;
       &__page{
         width: 170px;
